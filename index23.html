@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function determinarcuadrante(x, y) {
+            if (x > 0 && y > 0) {
+        return "Primer cuadrante";
+    } else if (x < 0 && y > 0) {
+        return "Segundo cuadrante";
+    } else if (x < 0 && y < 0) {
+        return "Tercer cuadrante";
+    } else if (x > 0 && y < 0) {
+        return "Cuarto cuadrante";
+    } else if (x === 0 && y !== 0) {
+        return "Sobre el eje y";
+    } else if (x !== 0 && y === 0) {
+        return "Sobre el eje x";
+    } else {
+        return "Origen (0, 0)";
+    }
+            
+        }
+        var determinar = determinarcuadrante(5,6);
+        alert("" + determinar );
+    </script>
+</body>
+</html>

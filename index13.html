@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function evaluarcalificaiones(calificaion) {
+            if (calificacion >= 90 && calificaion <= 100 ) {
+                return "Excelente";
+            }
+            if (calificacion >= 80 && calificacion <= 89) {
+                return "Bueno";
+            }
+            if (calificacion >= 70 && calificacion <= 79) {
+                return "Regular";
+            }
+            if (calificacion <70) {
+                return "Insuficiente";
+                
+            }
+
+
+            
+        }
+        var evaluar = evaluarcalificaiones("80");
+        alert("" + evaluar);
+    </script>
+</body>
+</html>
